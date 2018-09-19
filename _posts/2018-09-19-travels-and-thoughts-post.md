@@ -1,5 +1,5 @@
 ---
-layout: post.html
+layout: post
 title: "Launch of Site"
 date: 2018-09-19
 ---
