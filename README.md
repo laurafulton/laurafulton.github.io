@@ -1,5 +1,5 @@
-#Personal Website
+Personal Website
 # https://laurafulton.github.io
 
-#PUI Projects
-#http://laurafulton.github.io/jsQuiz
+PUI Projects
+http://laurafulton.github.io/jsQuiz
