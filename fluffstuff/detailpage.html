@@ -1,0 +1,273 @@
+<!--Laura Fulton, PUI Fluff Stuff Website -->
+
+<!DOCTYPE html>
+<html lang= "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Fluff Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--buttons-->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!--cart icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script:700|Kaushan+Script|Roboto|Pacifico&display=swap" rel="stylesheet">
+
+  
+  </head>
+
+
+
+  <body>
+    
+    <!-- HEADER SECTION CONTAINING LOGO, SEARCH BAR, LOG-IN, CHECKOUT -->
+    <section id="headertopof">
+   
+    <div class= "header">
+
+      <ul>
+
+        <!--logo-->
+        <li>
+          <a href ="indexs.html" class="logo"> Fluff Stuff  </a>
+        </li>
+
+        <!--search bar form -->
+        <li> 
+          <form autocomplete="off" action="/action_page.php">
+              <div class="autocomplete" style="width:300px;">
+                  <input id="myInput" type="text" name="myPillow" placeholder="Click here to search for a specific item">
+              </div>
+                <input class = "hsubmit" type="Submit">
+          </form>
+        </li>
+
+        <!--login button and checkout (right aligned)-->
+        <li>
+          
+          <!--log-in-->
+          <button class="button1">Log in </button>
+   
+          <!--checkout button-->
+          <a href="#" class="btn btn-info btn-lg">
+          <i class = "fa fa-shopping-cart" style="font-size:35px; color: #9400D3;"></i></a>
+
+          <script src="script.js" type="text/javascript"></script>
+        </li>
+
+      </ul>
+
+
+      </div>
+
+    </section>
+
+    
+
+    <!-- NAV BAR SECTION CONTAINING SITE PAGE LINKS-->
+
+
+    <section id="navigation">
+          
+          <!--everything is a dropdown because otherwise it wasn't spacing vertically the same-->      
+          <ul class="my-nav-style">
+          <li>
+            <div class="dropdown">
+              <a href="#indexs.html"><button class="dropbtn">Home
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Floor Pillows</a>
+              <a href="#">Bedroom Pillows</a>
+              <a href="living.html">Living Room Pillows</a>
+              <a href="#">Custom Pillows</a>
+            </div>
+          </div>
+          </li>
+            <li>
+            <div class="dropdown">
+              <a href="#lookbook"><button class="dropbtn">Lookbook
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#about"><button class="dropbtn">About Us
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+          </ul>
+
+
+    </section>
+
+
+
+    <section id = "sometext">
+
+  
+          <ul class="my-nav-style2">
+          <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn3">Shop Products
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="indexs.html"><button class="dropbtn2"> ​ <i class="fa fa-caret-right"></i> 
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+  
+          <li>
+            <div class="dropdown">
+              <a href="living.html"><button class="dropbtn2">For Living Room
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn2"> ​ <i class="fa fa-caret-right"></i> 
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+            <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn2">Sweet Floral
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+    </section>
+
+
+
+
+
+    <section class ="container">
+
+
+    <div class="left-column">
+      <img data-image="black" src="pink.png" alt="">
+      <img data-image="blue" src="blue.png" alt="" >
+      <img data-image="red" class="active" src="pink.png">
+    
+
+
+    </div>
+
+
+ 
+ 
+  <!-- Right Column -->
+  <div class="right-column">
+ 
+    <!-- Product Description -->
+    <div class="product-description">
+      <h1>Sweet Floral</h1>
+      <p>Imagine this pillow with any couch. The pop of color from the floral accents is a beautiful contrast against the dark charcol knitting. This pattern was hand-designed locally and is available with four different flower colors. Go big or small with our two sizes. Can't decide? Get a few! </p><br>
+    </div>
+ 
+    <!-- Product Configuration -->
+    <div class="product-configuration">
+ 
+      <!-- Product Color -->
+
+
+ 
+      <!-- Cable Configuration -->
+      <div class="cable-config">
+        <span><h3>Flower Colors & Sizes</h3></span>
+        <button1>Small 8" x 12" ($20 ea.)</button1><br>
+         <button1>Large 16" x 20 ($35 ea.)</button1><br><br>
+
+
+        <button class="buttonpink">Pink</button>
+           <h5> # Small <input type="number" value="0" min="0">
+          # Large <input type="number" value="0" min="0"></h5>
+
+        <button class="buttongreen">Green</button>
+            <h5> # Small <input type="number" value="0" min="0">
+            # Large <input type="number" value="0" min="0"></h5>
+
+
+        <button class="buttonblue">Blue</button>
+            <h5> # Small <input type="number" value="0" min="0">
+             # Large <input type="number" value="0" min="0"></h5>
+
+
+        <button class="buttonorange">Orange</button>
+            <h5> # Small <input type="number" value="0" min="0">
+            # Large <input type="number" value="0" min="0"></h5>
+
+
+        <button class="buttonteal">Teal</button>
+            <h5> # Small <input type="number" value="0" min="0">
+            # Large <input type="number" value="1" min=""></h5>
+
+ 
+
+
+ 
+      </div>
+    </div>
+ 
+    <!-- Product Pricing -->
+    <div class="product-price">
+
+      <a href="#" class="button2">Add to cart</a>
+
+    </div>
+    </div>
+
+
+    </section>
+
+
+
+
+
+   <section id="feeter">
+      <p>&copy; 2019 PUI by Laura Fulton </p>
+
+    </section>
+
+
+  
+  </body>
+
+</html>
+
