@@ -1,0 +1,210 @@
+<!--INDEX  -->  
+<!--Laura Fulton, PUI Fluff Stuff Website -->
+
+
+<!DOCTYPE html>
+<html lang= "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Fluff Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--buttons-->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!--cart icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script:700|Kaushan+Script|Roboto|Pacifico&display=swap" rel="stylesheet">
+
+  
+  </head>
+
+
+
+  <body>
+    
+    <!-- HEADER SECTION CONTAINING LOGO, SEARCH BAR, LOG-IN, CHECKOUT -->
+    <section id="headertopof">
+   
+    <div class= "header">
+
+      <ul>
+
+        <!--logo-->
+        <li>
+          <a href ="indexs.html" class="logo"> Fluff Stuff  </a>
+        </li>
+
+        <!--search bar form -->
+        <li> 
+          <form autocomplete="off" action="/action_page.php">
+              <div class="autocomplete" style="width:300px;">
+                  <input id="myInput" type="text" name="myPillow" placeholder="Click here to search for a specific item">
+              </div>
+                <input class = "hsubmit" type="Submit">
+          </form>
+        </li>
+
+        <!--login button and checkout (right aligned)-->
+        <li>
+          
+          <!--log-in-->
+          <button class="button1">Log in </button>
+   
+          <!--checkout button-->
+          <a href="#" class="btn btn-info btn-lg">
+          <i class = "fa fa-shopping-cart" style="font-size:35px; color: #9400D3;"></i></a>
+
+          <script src="script.js" type="text/javascript"></script>
+        </li>
+
+      </ul>
+
+
+      </div>
+
+    </section>
+
+    
+
+    <!-- NAV BAR SECTION CONTAINING SITE PAGE LINKS-->
+
+
+    <section id="navigation">
+          
+          <!--everything is a dropdown because otherwise it wasn't spacing vertically the same-->      
+          <ul class="my-nav-style">
+          <li>
+            <div class="dropdown">
+              <a href="#indexs.html"><button class="dropbtn">Home
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Floor Pillows</a>
+              <a href="#">Bedroom Pillows</a>
+              <a href="living.html">Living Room Pillows</a>
+              <a href="#">Custom Pillows</a>
+            </div>
+          </div>
+          </li>
+            <li>
+            <div class="dropdown">
+              <a href="#lookbook"><button class="dropbtn">Lookbook
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#about"><button class="dropbtn">About Us
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+          </ul>
+
+
+    </section>
+
+
+
+    <!--THIS IS HOME PAGE SECTION CONTAINS LOGO IMAGE AND PRODUCT CATEGORIES -->
+
+    <section id="homepage">
+
+    <!--logo image -->
+    <div class="home-img">
+      <div class="home-text">
+      <h1>Ethical, handmade, local pillows</h1>
+      </div>
+    </div>
+
+
+    <!--product categories -->
+    <div class="homeprodrow">
+
+      <div class="homeprodcol">
+          <div class="ccard">
+            <img src="https://live.staticflickr.com/5212/5503365571_f9e8b0aefb_b.jpg" alt="Avatar" style="width:100%">
+            <div class="ccontainer">
+                 <p>Floor</p>
+              </div>
+          </div>
+        </div>
+
+          <div class="homeprodcol">
+          <div class="ccard">
+            <img src="https://live.staticflickr.com/4075/4901338793_dde72f1087_b.jpg" alt="Avatar" style="width:100%">
+            <div class="ccontainer">
+                <p>Bedroom </p>
+              </div>
+          </div>
+        </div>
+
+             <div class="homeprodcol">
+          <a href="living.html">
+          <div class="ccard">
+            <img src="https://c1.staticflickr.com/7/6231/6285752948_e39c8a81f7_b.jpg" alt="Avatar" style="width:100%">
+            <div class="ccontainer">
+                <p>Living Room </p>
+              </div>
+          </div>
+          </a>
+        </div>
+
+             <div class="homeprodcol">
+          <div class="ccard">
+            <img src="https://farm8.staticflickr.com/7154/6591990331_dda1657912_b.jpg" alt="Avatar" style="width:100%">
+            <div class="ccontainer">
+                <p>Custom </p>
+              </div>
+          </div>
+        </div>
+
+
+      </div>
+
+  
+
+    <br>
+
+    <!--button to shop all the products (not built to be active right now)-->
+    <div style="text-align:center;">
+        <a href = "#productpage"><button class="button2">Shop All</button></a>
+    </div>
+
+
+
+     </section>
+  <br>
+  <br>
+
+
+  <!--adding this to essentially put my name on this assignment -->
+   <section id="feeter">
+      <p>&copy; 2019 PUI by Laura Fulton </p>
+
+    </section>
+
+
+  
+  </body>
+
+</html>

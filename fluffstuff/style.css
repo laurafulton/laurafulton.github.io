@@ -1,0 +1,706 @@
+
+/******PUI Fluff Stuff Website******/
+
+
+/******HEADER ******/
+
+/*Header general spacing / style */
+.headertopof{
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  padding: 50px 50px;
+  height:100px;
+  width: 100%;
+}
+
+/* Header link style */
+.headertopof a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  height: 50px;
+}
+
+/* Header logo style */
+.header a.logo {
+  font-size: 30px;
+  font-family: 'Kaushan Script', cursive;
+  text-shadow: 1px 1px #4B0082;
+  color: #9400D3;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* Header link hovering */
+.header a:hover {
+  background-color: #ddd;
+  color: #4B0082;
+}
+
+
+/* Header active link style */
+.header a.active {
+  color: white;
+}
+
+/*Header spacing within, getting login/cart to go to the right*/
+.header a.right{
+  float: right;
+}
+
+/*Header (also general) style for buttons*/
+.button1{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  text-align: center;
+  color: #999;
+  background-color: #ffffff;
+  border-width: 1px;
+}
+
+/*Header (also general) list style*/
+ul {
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+ul:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ul:before {
+    content: '';
+    display: block;
+    margin-top: 0em;
+}
+li {
+    display: inline-block;
+    margin-right: 0em;
+    position: relative;
+    top: 0em;
+}
+
+/******HEADER ******/
+
+
+
+
+
+/***NAVIGATION ******/
+
+
+/* Nav bar link style */
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  top: 10%;
+  left: 10%;
+  text-align: center;
+  position: relative;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color:black;
+}
+
+
+/* Nav bar hiding icons*/
+.topnav .icon {
+  display: none;
+}
+
+/* Nav bar dropdown style */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Nav making dropdown buttons fit inside bar*/
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown .dropbtn2 {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color:  #e6ccff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+.dropdown .dropbtn3 {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color:  #e6ccff;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+
+}
+
+/* Nav content styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Nav links inside dropdown style*/
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Hovering within dropdown creates grey background over what's active  */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #9400D3;
+}
+.topnav a:hover, .dropdown:hover .dropbtn3 {
+  color: #9400D3;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #9400D3;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* attempt at media scaling */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* attempt at media scaling */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Nav link styling */
+ul.my-nav-style {
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color:   white;
+}
+ul.my-nav-style:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+ul.my-nav-style:before {
+    content: '';
+    display: block;
+    margin-top: 0em;
+}
+li.my-nav-style {
+    display: inline-block;
+    margin-right: 0em;
+    position: relative;
+    top: 0em;
+}
+
+ul.my-nav-style2 {
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #e6ccff;
+}
+ul.my-nav-style2:after {
+    content: '';
+    display: inline-block;
+    width: 25%;
+    color: #e6ccff;
+}
+ul.my-nav-style2:before {
+    content: '';
+    display: block;
+    margin-top: 0em;
+    color: #e6ccff;
+}
+li.my-nav-style2 {
+    display: inline-block;
+    margin-right: 0em;
+    position: relative;
+    top: 0em;
+    color: #e6ccff;
+}
+/***NAVIGATION ******/
+
+
+
+
+
+
+
+
+
+
+
+/***HOME PAGE ****/
+
+ 
+/*big top image */
+.home-img {
+    /* Sizing */
+    width: 100vw;
+    height: 40vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    
+    /* Background styles */
+    background-image:  url(http://live.staticflickr.com/3297/3317188587_934b5485a5_k.jpg);
+    background-size: cover;
+        /* Background styles */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* white text on the image in pretty script */
+.home-text {
+  text-align: center;
+  position: absolute;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 30px;
+  text-shadow: 2px 2px #4B0082;
+
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/** Home page product categories**/
+
+/*row of images with each card taking up a column essentially*/
+.homeprodrow {
+  display:  flex;
+  justify-content: center;
+  /*padding-left: 200px;*/
+ /* padding-right: 200px;*/
+  padding-top: 15px;
+  padding-left: 10%;
+  padding-right: 10%;
+  clear:both;
+}
+
+.homeprodcolumn {
+  padding: 60px;
+  width: 30%;
+
+}
+
+.ccard {
+  /*shadows without hover */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-color: black;
+  border-radius: 5px; /* 5px rounded corners */
+  margin: 10px;
+  padding-bottom:30px;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+
+/* adding some more shaddows to show which one is hovered over */
+.ccard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}
+
+/*making card thicc*/
+.ccontainer {
+  padding: 2px 16px;
+}
+
+/*rounding card corners */
+img {
+  border-radius: 5px 5px 0 0;
+  height: 200px;
+  width: 200px;
+
+}
+
+/*Button style to "Shop All"*/
+.button2{
+  border: 2px solid #9400D3; 
+  display: inline-block;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  text-align: center;
+  color: #9400D3;
+  background-color: #ffffff ;
+  border-width: 1px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.button2 {
+  transition-duration: 0.4s;
+
+}
+
+.button2:hover {
+  background-color: #9400D3; 
+  color: white;
+  text-decoration: none;
+}
+
+
+/*removing annoying underline under links*/
+  a {
+    text-decoration: none;
+  }
+
+
+/*home page footer styling */
+#feeter{
+  text-align: center;
+}
+
+/***HOME PAGE ****/
+
+
+
+
+
+
+/*** LIVING ROOM PRODUCT PAGE ***/
+
+/*before the see more is clicked*/
+#more {display: none;}
+
+/*color to text of product name*/
+#fun{
+  color: #9400D3;
+  text-align: left;  
+}
+
+/*color to subtext of product name*/
+#fun1{
+  color: gray;
+  text-align: left;
+  margin:0;
+}
+
+#ulliv{
+  margin: 0; 
+  padding:0 0 0 0;
+}
+/*** LIVING ROOM PRODUCT PAGE ***/
+
+
+
+
+
+
+
+
+
+/**SWEET FLORAL PRODUCT PAGE ***/
+
+/*matching font to rest of page and adding flex*/ 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  font-family: 'Ariel', sans-serif;
+}
+
+/*images goes over here*/
+.left-column {
+  width: 65%;
+  position: relative;
+
+}
+ 
+ /*description*/
+.right-column {
+  width: 45%;
+  margin-top: 60px;
+  padding-right: 5%;
+}
+
+/*product image*/
+.left-column img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  height:300px;
+  transition: all 0.3s ease;
+}
+ 
+
+.left-column img.active {
+  opacity: 1;
+}
+
+.product-description {
+  border-bottom: 1px solid #E1E8EE;
+  margin-bottom: 20px;
+
+}
+
+.product-description h1 {
+  font-weight: 300;
+  font-size: 52px;
+  color: #43484D;
+  letter-spacing: -2px;
+}
+.product-description p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #86939E;
+  line-height: 24px;
+}
+
+
+/* Product Color */
+
+.buttonpink{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url(p.png);
+  border-width: 1px;
+  width: 200px;
+}
+
+.buttongreen{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url(g.png);
+  border-width: 1px;
+  width: 200px;
+}
+
+.buttonblue{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url(b.png);
+  border-width: 1px;
+  width: 200px;
+}
+
+.buttonorange{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url(o.png);
+  border-width: 1px;
+  width: 200px;
+}
+
+.buttonteal{
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  font-family: 'Ariel', sans-serif;
+  text-align: center;
+  color: white;
+  background-image: url(t.png);
+  border-width: 1px;
+  width: 200px;
+}
+
+
+.cart-btn {
+  display: inline-block;
+  background-color: #7DC855;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 30px;
+  transition: all .5s;
+}
+.cart-btn:hover {
+  background-color: #64af3d;
+}
+
+h5{
+  color: #999;
+  font-size: 12px;
+    font-family: 'Ariel', sans-serif;
+}
+
+
+
+
+
+/***SEARCH BAR STYLING ******/
+
+
+/*search bar within top header*/
+.navmenu { margin: 0 auto }
+.navlink { display: flex; justify-content: center }
+/*search button*/
+* { box-sizing: border-box; }
+body {
+  font: 16px Arial;
+}
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+input {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-family: 'Ariel', sans-serif;
+  font-size: 16px;
+}
+input[type=text] {
+  background-color: white;
+  width: 100%;
+}
+ input[type=submit] {
+   background-color: #9400D3;
+   color: #fff;
+   border-radius: 5px; 
+ }
+
+input[type=number] {
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-family: 'Ariel', sans-serif;
+  text-align: right;
+  font-size: 12px;
+  width: 40px;
+}
+
+
+
+ .autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #9400D3 !important;
+  color: #ffffff;
+}
+/********/
