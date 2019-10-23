@@ -1,5 +1,5 @@
 **Site:
-https://laurafulton.github.io/fluffstuff/assgn5/indexs.html**
+https://laurafulton.github.io/fluffstuff/indexs.html**
 
 Some Bonus Work:
 
