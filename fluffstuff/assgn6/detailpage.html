@@ -1,0 +1,299 @@
+<!--DETAILS PAGE FOR PILLOW -->
+<!--Laura Fulton, PUI Fluff Stuff Website -->
+
+<!DOCTYPE html>
+<html lang= "en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Fluff Stuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!--buttons-->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!--cart icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script:700|Kaushan+Script|Roboto|Pacifico&display=swap" rel="stylesheet">
+
+  
+  </head>
+
+
+
+  <body>
+    
+    <!-- HEADER SECTION CONTAINING LOGO, SEARCH BAR, LOG-IN, CHECKOUT -->
+    <section id="headertopof">
+   
+    <div class= "header">
+
+      <ul>
+
+        <!--logo-->
+        <li>
+          <a href ="indexs.html" class="logo"> Fluff Stuff  </a>
+        </li>
+
+        <!--search bar form -->
+        <li> 
+          <form autocomplete="off" action="/action_page.php">
+              <div class="autocomplete" style="width:300px;">
+                  <input id="myInput" type="text" name="myPillow" placeholder="Click here to search for a specific item">
+              </div>
+                <input class = "hsubmit" type="Submit">
+          </form>
+        </li>
+
+        <!--login button and checkout (right aligned)-->
+        <li>
+          
+          <!--log-in-->
+          <button class="button1">Log in </button>
+   
+          <!--checkout button-->
+          <a href="cart.html" class="btn btn-info btn-lg">
+
+          <i class= "fa fa-shopping-cart" id="result" style="font-size:35px; color: #9400D3;"></i></a>
+
+          <!--cart quantity-->
+       
+
+          </a>
+
+
+
+          <script src="autocomp.js" type="text/javascript"></script>
+        </li>
+
+      </ul>
+
+
+      </div>
+
+    </section>
+
+    
+
+    <!-- NAV BAR SECTION CONTAINING SITE PAGE LINKS-->
+
+
+    <section id="navigation">
+          
+          <!--everything is a dropdown because otherwise it wasn't spacing vertically the same-->      
+          <ul class="my-nav-style">
+          <li>
+            <div class="dropdown">
+              <a href="indexs.html"><button class="dropbtn">Home
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Floor Pillows</a>
+              <a href="#">Bedroom Pillows</a>
+              <a href="living.html">Living Room Pillows</a>
+              <a href="#">Custom Pillows</a>
+            </div>
+          </div>
+          </li>
+            <li>
+            <div class="dropdown">
+              <a href="#lookbook"><button class="dropbtn">Lookbook
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#about"><button class="dropbtn">About Us
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+          </ul>
+
+
+    </section>
+
+
+
+    <section id = "sometext">
+
+  
+          <ul class="my-nav-style2">
+          <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn3">Shop Products
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="indexs.html"><button class="dropbtn2"> ​ <i class="fa fa-caret-right"></i> 
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+  
+          <li>
+            <div class="dropdown">
+              <a href="living.html"><button class="dropbtn2">For Living Room
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn2"> ​ <i class="fa fa-caret-right"></i> 
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+            <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn2">Sweet Stitchwork
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+    </section>
+
+
+
+<!-- Left Column / Headphones Image -->
+  <main class="container">
+
+      <!-- Left Column / Headphones Image -->
+      <div class="left-column">
+        <img data-image="red" src="images/pink.jpg" alt="">       
+        <img data-image="black" class="active" src="images/purple.jpg" alt="">
+        <img data-image="blue" src="images/blue.jpg" alt="">
+      </div>
+
+
+      <!-- Right Column -->
+      <div class="right-column">
+
+        <!-- Product Description -->
+        <div class="product-description">
+          <h2>Sweet Stitchwork</h2>
+          <br>
+          <p>Imagine this pillow with any couch. This is our most popular pillow. Now available in THREE beautiful colors. This pattern was hand-designed locally. Can't decide? Get a few!</p>
+          <br>
+          <div class="product-title">Price: $30.00 </div>
+          <br>
+           <button class="trigger">Free Shipping</button>
+          <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Free Shipping</h3>
+            <p>Enjoy free shipping on specially marked products. Offer is valid on orders shipped via FedEx within the contiguous U.S.; Alaska, Hawaii and Puerto Rico are excluded. This offer is nontransferable and cannot be combined with other promotions or discounts, nor applied to past purchases or future deliveries.</p>
+        </div>
+    </div>
+        <br><br><br><br>
+        </div>
+        <br>
+
+        <!-- Product Configuration -->
+        <div class="product-configuration">
+
+          <!-- Product Color -->
+          <div class="product-color">
+           <div class="product-title">Select a color: </div>
+           <br>
+
+            <div class="color-choose">
+              <div>
+                <input data-image="black" type="radio" id="black" name="color" value="black">
+                <label for="black"><span></span></label>
+              </div>
+              <div>
+                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                <label for="red"><span></span></label>
+              </div>
+              <div>
+                <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                <label for="blue"><span></span></label>
+              </div>
+
+            </div>
+
+          </div>
+         
+        </div>
+
+        <div>
+        <!-- Product Pricing -->
+        <br>
+       <!-- <div class="product-title"> Select Quantity: </div>-->
+        <br>
+
+        <div class="product-title"> Add selection to cart: </div>
+        <br>
+        
+        <!--<h5> QTY: <input type="number" value="0" min="0"></h5>-->
+
+        <style>#quantity { padding:5px; width:35px; border: 1px solid #555; }</style>
+
+        <section>
+        <div class="product-price">
+          <button class = "button3" onclick="clickCounter()">Add 1 to cart</button>
+        </div>
+        <br><br><br><br><br>
+        <div class="product-price">
+          <button class = "button2" onclick="clickCounter2()">Remove item</button>
+        </div>
+
+ 
+      </div>
+    </div>
+ 
+   
+    </main>
+     
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+
+  </main>
+
+
+
+
+
+
+   <section id="feeter">
+      <p>&copy; 2019 PUI by Laura Fulton </p>
+
+    </section>
+
+
+  
+  </body>
+
+</html>
+
