@@ -1,0 +1,255 @@
+<!--DETAILS PAGE FOR PILLOW -->
+<!--Laura Fulton, PUI Fluff Stuff Website -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Fluff Stuff</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--buttons-->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!--cart icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Dancing+Script:700|Kaushan+Script|Roboto|Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/products-style.css">
+    <link rel="stylesheet" type="text/css" href="css/details-style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+    <div class="wrapper"> 
+
+      <!-- HEADER SECTION CONTAINING LOGO, SEARCH BAR, LOG-IN, CHECKOUT -->
+    <header>
+    <section id="headertopof">
+    <div class= "header">
+      <ul>
+        <!--logo-->
+        <li>
+          <a href ="indexs.html" class="logo"> Fluff Stuff  </a>
+        </li>
+        <!--search bar form -->
+        <li> 
+          <form autocomplete="off" action="/action_page.php">
+              <div class="autocomplete" style="width:300px;">
+                  <input id="myInput" type="text" name="myPillow" placeholder="Click here to search for a specific item">
+              </div>
+                <input class = "hsubmit" type="Submit">
+          </form>
+        </li>
+        <!--login button and checkout (right aligned)-->
+        <li>         
+          <!--log-in-->
+          <button class="button1">Log in </button>   
+          <!--checkout button-->
+          <a href="prodct.html" class="btn btn-info btn-lg">
+          <i class= "fa fa-shopping-cart" id="result" style="font-size:35px; color: #9400D3;" href="prodct."></i></a>
+          <div class="link-box"> <a id="nav-cart" class="nav-link" href="prodct.html">Cart (0)</a> </div>
+
+          <!--cart quantity-->
+          <script src="js/autocomp.js" type="text/javascript"></script>
+        </li>
+
+      </ul>
+
+      </div>
+
+    </section>
+        <!-- NAV BAR SECTION CONTAINING SITE PAGE LINKS-->
+    <section id="navigation">         
+          <!--everything is a dropdown because otherwise it wasn't spacing vertically the same-->      
+          <ul class="my-nav-style">
+          <li>
+            <div class="dropdown">
+              <a href="indexs.html"><button class="dropbtn">Home
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+          <div class="dropdown">
+            <button class="dropbtn">Shop Products
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Floor Pillows</a>
+              <a href="#">Bedroom Pillows</a>
+              <a href="living.html">Living Room Pillows</a>
+              <a href="#">Custom Pillows</a>
+            </div>
+          </div>
+          </li>
+            <li>
+            <div class="dropdown">
+              <a href="#lookbook"><button class="dropbtn">Lookbook
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="#about"><button class="dropbtn">About Us
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+          <li>
+             <div class = "dropdown">
+              <a id="nav-wish" class="nav-link" href="wish.html"><button class="dropbtn" style="color: #e6ccff">Wish List </button></a></div>
+          </li>
+
+          </ul>
+
+
+    </section>
+
+    <section id = "sometext">
+          <ul class="my-nav-style2">
+          <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn3">Shop Products
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a href="indexs.html"><button class="dropbtn2"> ​ <i class="fa fa-caret-right"></i> 
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+  
+          <li>
+            <div class="dropdown">
+              <a href="living.html"><button class="dropbtn2">For Living Room
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn2"> ​ <i class="fa fa-caret-right"></i> 
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+            <li>
+            <div class="dropdown">
+              <a href="#"><button class="dropbtn2">Sweet Stitchwork
+              </button></a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </li>
+
+    </section>
+  </header>
+
+<section>
+     <div class="content-wrapper">
+    <div class="photos-container"> <img id="main-photo" src="images/main-product-lavender.png" style="width:400px"> <img id="shape-img" src="" width="0" height="0" style= "padding-left: 0px; padding-right: 0px";
+>
+      <div class="product-images"> </div>
+    </div>
+        
+        <!--Text and Buttons-->
+        <div class="text-container">
+          <h2 id="product-name">Sweet Stitchwork</h2>
+          <h5 id="product-type" class="inline">Lavender Pillow</h5>
+          <h5 class="inline">&nbsp;|&nbsp;</h5>
+          <h5 id="product-shape" class="inline">Round</h5>
+          <h4> Product Price: </h4>
+          <h3 id="product-price">$30</sup></h3>
+
+          <p class="product-desc">Imagine this pillow with any couch. This is our most popular pillow. Now available in THREE beautiful colors. This pattern was hand-designed locally. Can't decide? Get a few!</p>
+          <br><br>
+          
+          <button class="trigger">Free Shipping</button>
+          <div class="modal">
+          <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Free Shipping</h3>
+            <p>Enjoy free shipping on specially marked products. Offer is valid on orders shipped via FedEx within the contiguous U.S.; Alaska, Hawaii and Puerto Rico are excluded. This offer is nontransferable and cannot be combined with other promotions or discounts, nor applied to past purchases or future deliveries.</p>
+          </div></div>
+          <br><br>
+          <br><br>
+          <h4>Quantity
+         
+          <select id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select></h4>
+ 
+          <!-- Options Types -->
+          <div class="product-options">
+            <h4>Types &nbsp &nbsp
+            <select id="type-select">
+              <option value="Lavender Pillow">Lavender</option>
+              <option value="Sky Pillow">Sky Blue</option>
+              <option value="Navy Pillow">Navy</option>
+              <option value="Yellow Pillow">Yellow</option>
+            </select></h4>
+          </div>
+
+          <!-- Options Shapes -->
+          <div class="product-options">
+            <h4>Size&nbsp &nbsp
+            <select id="shape-select">
+              <option value="8x8" selected>8x8</option>
+              <option value="12x12">12x12</option>
+              <option value="18x18">18x18</option>
+            </select></h4>
+          </div>
+          <br><br>
+          <div class="btn">
+            <button class="add-cart-btn">Add to Cart</button>
+          </div>
+          <br><br><br>
+
+
+          <button class = "add-wish-btn" id="heart">Wish List <i class="fa fa-heart"></i></button>
+
+         
+        </div>
+      </div>
+    </section>
+      <br>
+      <br><br><br><br><br><br><br><br><br>
+      <!--Section - Footer-->
+      <section id="feeter">
+        <p>&copy; 2019 PUI by Laura Fulton </p>
+
+      </section>
+
+
+      <!--End of Content--> 
+    </div>
+    <script src="js/product.js"></script>
+    </body>
+    </html>
