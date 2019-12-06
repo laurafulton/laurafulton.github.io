@@ -1,0 +1,169 @@
+<!--Laura Fulton, PUI Final Project-->
+<!--HTML File-->
+
+<!--TO DO STYLE -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accentylon</title>
+  	<link rel="stylesheet" type="text/css" href="assets/style/map.css">
+  	<link rel="stylesheet" type="text/css" href="assets/style/bootstrap.min.css">
+  	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  	<!--add for sine wave-->
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top" style="color: #068585e0">
+  <div class="container">
+    <a class="navbar-brand" href="#">🔊 Accentylon</a>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+    </div>
+  </div>
+</nav>
+
+
+<!-- Full Page Image Header with Vertically Centered Content -->
+<div class="hero hero-waves">
+  <div class="hero-title text-center">
+
+
+	<header>
+
+	<!-- <img src="ezgif.com-gif-maker.gif" class="img-center" </img> -->
+
+	<!-- <canvas id="sinewaves"></canvas> -->
+	<!-- <iframe src="wave.html"></iframe> -->
+	
+	<!--animated voice audio wave -->
+	<div class="chart-container" style="position: relative; height:50vh; vertical-align: top;">
+		<canvas id="waves"></canvas>
+	</div>
+
+
+	<h1>This is our world. These are our voices.</h1>
+	<br>
+	<h5>Today's virtual agents express speech styles that only reflect a subset of voices.</h5><h5> With Accentylon, explore rich accents spoken around the world.</h5>
+	</header>
+
+<MARQUEE behavior="alternate" scrollamount="3" width="100%" bgcolor="#669999">
+
+    	<!--copy and pasted all image links from: https://www.countries-ofthe-world.com/flags-of-the-world.html, chose these by referencing both translate and speech browser codes to make sure countries pick are available, noted codes for later use in project https://ctrlq.org/code/19899-google-translate-languages and http://www.lingoes.net/en/translator/langcode.htm-->
+
+    	<!--Afrikaans, Zambia, translate: af, accent: af-ZA-->
+    	&nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Zambia.png" height="40px">
+    	<!--Albanian, Albania, translate: sq, accent: sq-AL-->
+    	&nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Albania.png" height="40px">
+    	<!--Arabic, Egypt, translate: ar, accent: ar-EG -->
+    	&nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Egypt.png" height="40px">
+    	<!--Belarusian, Belaruse (Russia), translate: bn, accent: be-BY -->
+        &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Belarus.png" height="40px">
+        <!--Bulgarian, Bulgaria (Russia), translate: bn, accent: bg-BG -->
+        &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Bulgaria.png" height="40px">
+        <!--Chinese, Hong Kong, translate: zh-CN, accent: zh-HK note: also zh and zh-CN for traditional-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-China.png" height="40px">
+		 <!--Croatian, Croatia, translate: hr, hr-HR-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Croatia.png" height="40px">
+		 <!--Danish, Denmark, translate: da, accent: da-DK-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Denmark.png" height="40px">
+		  <!--Dutch, Holland, translate: nl, accent: nl-NL-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Netherlands.png" height="40px">
+		<!--English, USA, translate: en, accent: en-US-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-United-States-of-America.png" height="40px">
+		 <!--Filipino, Philippines, translate: tl, accent: en-PH-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Philippines.png" height="40px">
+		  <!--French, France, translate: fr, accent: fr-FR-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-France.png" height="40px">
+		  <!--German, Germany, translate: de, accent: de-DE-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Germany.png" height="40px">
+		   <!--Greek, Greece, translate: el, accent: el-GR-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Greece.png" height="40px">
+		  <!--India, Hindi, Bengali, Telugu, Tamil ...going to do Hindi for country translate: hi, accent: hi-IN-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-India.png" height="40px">
+		   <!--Hebrew, Israil, translate: iw, accent: he-IL-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Israel.png" height="40px">
+		  <!--Icelandic, Iceland, translate: is, accent: is-IS-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Iceland.png" height="40px">
+		  <!--Indonesian, Indonesia, translate: id, accent: id-ID-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Indonesia.png" height="40px">
+		 <!--Irish, Ireland translate: ga, accent: en-IE-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Ireland.png" height="40px">
+		 <!--Italian, Italy translate: it, accent: it-IT-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Italy.png" height="40px">
+		 <!--Japanese, Japan translate: ja, accent: ja-JP-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Japan.png" height="40px">
+		 <!--Portuguese, Brazil translate: pt, accent: pt-BR-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Brazil.png" height="40px">
+		 <!--Russian, Russia: ru, accent: ru-RU-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Russia.png" height="40px">
+		<!--Spanish, Spain: es, accent: es-ES (there's so many accents depending on country, going to also add Ecuador es-EC, Guatemala es-GT and Peru es-PE -->
+		 &nbsp<img src="hhttps://www.countries-ofthe-world.com/flags-normal/flag-of-Spain.png" height="40px">
+		  &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Ecuador.png" height="40px">
+		   &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Guatemala.png" height="40px">
+		   &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Peru.png" height="40px">
+		  
+		 <!--Thai, Thailand: th, accent: th-Th-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Thailand.png" height="40px">
+		 <!--Ukrainian, Ukraine: uk, accent: uk-UK-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Ukraine.png" height="40px">
+		 <!--Vietnamese, Vietnam: vi, accent: vi-Vi-->
+		 &nbsp<img src="https://www.countries-ofthe-world.com/flags-normal/flag-of-Vietnam.png" height="40px">
+    </MARQUEE>
+
+</div>
+
+
+
+<br>
+<br>
+<h3 class="learnmore">Learn More</h3>
+<br>
+<a href="#maptime">
+<div class="downArrow bounce">
+  <img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDMyIDMyIiBoZWlnaHQ9IjMycHgiIGlkPSLQodC70L7QuV8xIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMycHgiIHhtbDpzcGFjZT0icHJlc2VydmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0yNC4yODUsMTEuMjg0TDE2LDE5LjU3MWwtOC4yODUtOC4yODhjLTAuMzk1LTAuMzk1LTEuMDM0LTAuMzk1LTEuNDI5LDAgIGMtMC4zOTQsMC4zOTUtMC4zOTQsMS4wMzUsMCwxLjQzbDguOTk5LDkuMDAybDAsMGwwLDBjMC4zOTQsMC4zOTUsMS4wMzQsMC4zOTUsMS40MjgsMGw4Ljk5OS05LjAwMiAgYzAuMzk0LTAuMzk1LDAuMzk0LTEuMDM2LDAtMS40MzFDMjUuMzE5LDEwLjg4OSwyNC42NzksMTAuODg5LDI0LjI4NSwxMS4yODR6IiBmaWxsPSIjMTIxMzEzIiBpZD0iRXhwYW5kX01vcmUiLz48Zy8+PGcvPjxnLz48Zy8+PGcvPjxnLz48L3N2Zz4=" />
+</div></a>
+
+<!-- Page Content -->
+<section class="py-5">
+   <!--  <h3 class="font-weight-light">Explore Accents</h3> -->
+    <p>
+	<div class="list-type5"> <a name="maptime"></a>
+		<ol>
+		<li>Pick a country on the map</li>
+		<li>Create a message</li>
+		<li>Hear it spoken in the local accent</li>
+		</ol>
+	</div>
+    </p>
+
+    
+  </div>
+</section>
+
+<!--MAP SIZE-->
+<div id="map" style="width:100%;height:400px;">map</div>
+
+<div class="ocean">
+	<br>
+	<p> Thank you for visiting!  © Laura Fulton, PUI 2019</p>
+  <div class="wave"></div>
+</div>
+
+</body>
+
+<!--API for Map with my unique KEY -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARHAZVbZdQW-OEq1dRv7B4uSRIIoEeSnk&callback=initMap"></script>
+
+<!--All the fun map details!-->
+<script src="assets/script/map.js" async defer></script>
+<script src="assets/script/map.js" async defer></script>
+
+</body>
+</html>
