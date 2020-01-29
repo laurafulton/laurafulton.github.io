@@ -57,17 +57,13 @@
               The focus of the Carnegie Mellon Visualization Group is to clarify findings and improve understanding of complex data. Through an independent study collaboration with Dr. Adam Perer and Dr. Jessica Hammer, my research explores the use of Games with a Purpose (GWAP) to Improve Explainable AI (XAI). <br><br>
 
 
-Explainable Artificial Intelligence (XAI) is an emerging topic in Machine Learning (ML) that aims to give humans visibility into how AI systems make decisions. XAI is increasingly important in bringing transparency to fields such as medicine and criminal justice where AI informs high consequence de- cisions. While many XAI techniques have been proposed, few have been evaluated beyond anecdotal evidence. 
+Explainable Artificial Intelligence (XAI) is an emerging topic in Machine Learning (ML) that aims to give humans visibility into how AI systems make decisions. XAI is increasingly important in bringing transparency to fields such as medicine and criminal justice where AI informs high consequence decisions. While many XAI techniques have been proposed, few have been evaluated beyond anecdotal evidence. 
 
 <br><br>
 <blockquote class="x-large-text">Our research offers a novel approach to assess how humans interpret AI explanations; we explore this by integrating XAI with Games with a Purpose (GWAP).</blockquote> <br>
 <p class="x-large-text">XAI requires human evaluation at scale, and GWAP can be used for XAI tasks which are presented through rounds of play. <br><br>I recently authored a Late Breaking Work submission to the ACM CHI Conference on Human Factors in Computing Systems. The paper outlines the benefits of GWAP for XAI and demonstrates application through our creation of a multi-player GWAP which focuses on explaining deep learning models trained for image recognition: <a href="../chi20e-sub1129-i7.pdf" target="_blank" style="color: #65D5BA" >CHI 2020 Late Breaking Work</a>.
 
-
-
-<br><br>Through our game, we seek to understand how humans select and interpret explanations used in image recognition systems and bring empirical evidence on the validity of GWAP designs for XAI.
-<br><br>
-Through this research, I am expanding my background in research program management, designing user centered tests and collaborating with team members to progress game development, data collection, and design new features. We plan to share our work through publishing our findings and open sourcing our codebase. <!-- Here is a link to our <a href "https://github.com/cmuvis/mlint" style="color: #65D5BA;">Github project</a>. -->
+ <!-- Here is a link to our <a href "https://github.com/cmuvis/mlint" style="color: #65D5BA;">Github project</a>. -->
 
 
             </div>
@@ -96,33 +92,27 @@ Through this research, I am expanding my background in research program manageme
 
           </div>
         </div>
-        <!-- spacer -->
-        <div class="small-spacer"></div>
 
-        <div class="small-spacer"></div>
+
+
+        <!-- spacer -->
+                <div class="small-spacer"></div>
 
         <div class="container">
           <div class="row">
-            <div class="col-sm-5">
-              <h4><b>Details of the Game</h4></b>
+            <div class="col-sm-8">
+              <h4><b>Games with a Purpose for XAI</h4></b>
               <hr class="underline left"><br><br>
               <br>
-              <h5>Background Research</h5><br>
-              <p class="x-large-text">
-              In this multiplayer game, the first player, the explainer, selects a source image (e.g. cat). The explainer then selects the top 4 features that they believe will lead the other players to guess the correct answer as quickly as possible. </p>
-               <p class="x-large-text">
-              The other players are guessers and will compete against each other to guess the source image.
-              <br><br>
-              Each player that is an explainer is also a guesser during the game where they try to identify the source image based on feature visualizations chosen by other players.
-              </p>
-              <br>
-              <h5>Research Questions</h5><br>
-             
-              <p class="x-large-text">1. Will players who are explainers identify feature visualizations that AI also select to best represent source images? Similarly, will guessers  be able to interpret top-ranked explanations better than lower ranked explanations?<br><br>2. Should players improve at guessing source images during rounds or over the course of multiple games? <br><br>3. Can gamification with points for guessing attributes of feature visualization images improve guessing and user satisfaction when playing?<br><br>4. How might GWAP techniques in our research be generalized to other XAI problems?
+              
+
+<br><br><p class="x-large-text">We believe making models explainable is a prerequisite for building trust and understanding AI systems at scale. Through our game, we seek to understand how humans select and interpret explanations used in image recognition systems and bring empirical evidence on the validity of GWAP designs for XAI.</p>
+<br><br><p class="x-large-text">
+Through this research, I am expanding my background in research program management, designing user centered tests and collaborating with team members to progress game development, data collection, and design new features. We plan to share our work through publishing our findings and open sourcing our codebase.</p>
               </div>
               
 
-            <div class="col-sm-7">
+            <div class="col-sm-4">
               
             <br>
               <div class="w3-container">
@@ -133,6 +123,7 @@ Through this research, I am expanding my background in research program manageme
               <div class="w3-modal-content w3-animate-zoom"><img src="../img/gg1.png" style="width:100%">
               </div>
             </div>
+            Figure 1: overview of game for playtesters
           </div>
 
           <br>
@@ -144,6 +135,7 @@ Through this research, I am expanding my background in research program manageme
               <div class="w3-modal-content w3-animate-zoom"><img src="../img/gg2.png" style="width:100%">
               </div>
             </div>
+              Figure 2: gameplay instructions 
           </div>
           <br>
 <!--  <h5> "Models are ideas about the world - how it might be organized and how it might work." -Hugh Dubberly</h5r><br> -->
@@ -153,6 +145,221 @@ Through this research, I am expanding my background in research program manageme
 
             </div>
 
+
+
+        <div class="small-spacer"></div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9">
+              <h4><b>Excerpt from CHI Paper: Details of the Game</h4></b>
+              <hr class="underline left"><br><br>
+              <br> <p class="x-large-text">
+              To demonstrate the value of GWAP for XAI, we designed a
+              multi-player GWAP for image recognition. The game was
+              implemented in JavaScript using the React library. <br><br>
+              <h5>Learned Feature Visualizations</h5><br>
+              <p class="x-large-text">
+              Feature visualizations were produced by making neural network interpretation of images visible. Over the course of
+multiple layers, abstractions are built from detected edges,
+textures, patterns, and parts of an image. We computed
+feature visualizations from images of animals and objects
+using the Lucid library (Figure 3).</p><br><br>
+
+  <h5>Player Roles</h5><br>
+              <p class="x-large-text">
+              One player, the "explainer," is given a source image (Figure 4). The explainer selects the top explanations that they believe will lead the other players to guess the correct answer
+(e.g. parrot) as quickly as possible. Two other players are
+"guessers," who compete against each other to guess what
+the feature visualizations represent.</p><br>
+
+
+             <!--  <h5>Research Questions</h5><br> -->
+             
+             <!--  <p class="x-large-text">1. Will players who are explainers identify feature visualizations that AI also select to best represent source images? Similarly, will guessers  be able to interpret top-ranked explanations better than lower ranked explanations?<br><br>2. Should players improve at guessing source images during rounds or over the course of multiple games? <br><br>3. Can gamification with points for guessing attributes of feature visualization images improve guessing and user satisfaction when playing?<br><br>4. How might GWAP techniques in our research be generalized to other XAI problems? -->
+              </div>
+
+            <div class="col-sm-3">
+              <br>
+              <div class="w3-container">
+               <img src="../img/ggv.png" style="cursor: zoom-in" class="responsive-img" onclick="document.getElementById('ggv').style.display='block'">
+
+               <div id="ggv" class="w3-modal" onclick="this.style.display='none'"><span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+              <div class="w3-modal-content w3-animate-zoom"><img src="../img/ggv.png" style="width:100%">
+
+              </div>
+            </div>
+            Figure 3: visualizations generated from different source images
+          </div>
+            <br>
+
+              
+            <br>
+             <div class="w3-container">
+               <img src="../img/ggg1.png" style="cursor: zoom-in" class="responsive-img" onclick="document.getElementById('ggg1').style.display='block'">
+
+               <div id="ggg1" class="w3-modal" onclick="this.style.display='none'"><span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+              <div class="w3-modal-content w3-animate-zoom"><img src="../img/ggg1.png" style="width:100%">
+              </div>
+            </div>
+            Figure 4:  source image for parrot, the explainer selects top 4 visualizations they believe will lead other players to guess the correct answer (parrot) as quickly as possible 
+
+          </div>
+
+        
+<!--  <h5> "Models are ideas about the world - how it might be organized and how it might work." -Hugh Dubberly</h5r><br> -->
+
+              </div>
+            </div>
+
+            </div>
+
+
+            <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+             
+ <br>
+              <div class="w3-container">
+               <img src="../img/ggg3.png" style="cursor: zoom-in" class="responsive-img" onclick="document.getElementById('ggg3').style.display='block'">
+
+               <div id="ggg3" class="w3-modal" onclick="this.style.display='none'"><span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+              <div class="w3-modal-content w3-animate-zoom"><img src="../img/ggg3.png" style="width:100%">
+
+              </div>
+            </div>
+            Figure 5: other players who are guessers compete against to guess what visualizations represent
+          </div>
+            <br>
+
+<div class="w3-container">
+                <img src="../img/ggg4.png" style="cursor: zoom-in" class="responsive-img" onclick="document.getElementById('ggg4').style.display='block'">
+
+               <div id="ggg4" class="w3-modal" onclick="this.style.display='none'"><span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+              <div class="w3-modal-content w3-animate-zoom"><img src="../img/ggg4.png" style="width:100%">
+
+              </div>
+            </div>
+            Figure 6:  if the guessers are unable to guess the image after the 4 explanations are revealed, they receive a text hint
+          </div>
+            <br>
+              
+            <br>
+             <div class="w3-container">
+               <img src="../img/ggg5.png" style="cursor: zoom-in" class="responsive-img" onclick="document.getElementById('ggg5').style.display='block'">
+
+               <div id="ggg5" class="w3-modal" onclick="this.style.display='none'"><span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+
+              <div class="w3-modal-content w3-animate-zoom"><img src="../img/ggg5.png" style="width:100%">
+              </div>
+            </div>
+            Figure 7:  
+
+              </div>
+    </div>
+
+
+            <div class="col-sm-9">
+             
+
+  <h5>Points as Incentives</h5><br>
+              <p class="x-large-text">
+              Guessers receive one visual explanation to start, with a new explanation revealed every fifteen seconds (e.g. 2 of the 4 visualizations are revealed to guessers in Figure 5). The quicker a guesser identifies the correct answer, the more points the guesser and explainer gain. If the guessers are unable to guess the image (e.g. parrot) after all four images are revealed, they receive a text hint (Figure 6). We utilize transactive design, where all guesses are visible to the explainer and to the guessers. This allows each guesser to build on their and other players’ guesses. Providing accurate data is the ideal way to play this game, because both explainers and guessers aim to get to a correct guess as quickly as possible. In particular, we hypothesize that guessers are highly motivated not only by being quick to guess, but by being the first to guess, as only one of the two guessers receives points. Early pilot testing suggested that players find reaching agreement quickly to be satisfying and valuable.</p><br><br>
+
+
+  <h5>Data Collection</h5><br>
+ <p class="x-large-text">The game generates relevant data for explainable AI in two ways. First, the explainer is given ten visual explanations to select from, of varying explanatory quality as judged by our algorithms, and the explainer is only allowed to select four of the ten. Explainers also dictate the order in which the images are shown to guessers. Of the four visualizations they select, they are instructed to select the most helpful explanation first. Second, the guessers type guesses conveying how they interpret the visualizations and give information about which image(s) help them guess correctly. Guessers provide copious and timely data: they can guess as often as they want within a time limit.</p><br><br>
+
+  <h5>Adjusting Parameters</h5><br>
+<p class="x-large-text">
+Through versions of the game, we can capitalize on opportunities for divergence and transactivity by controlling whether the players can see each others’ guesses. If the explainer can see all guesses, but players can only see their own, we test a divergence supporting system; if players can see each others’ guesses and are incentivized to build on each other’s contributions, we test a transactivesupporting system. </p>
+             
+          </div>
+
+        
+<!--  <h5> "Models are ideas about the world - how it might be organized and how it might work." -Hugh Dubberly</h5r><br> -->
+
+              </div>
+            </div>
+
+            </div>
+
+          <br>
+
+  <!-- 
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+               <h4><b>User Playtesting and Next Steps </h4></b>
+              <hr class="underline left"><br><br>
+           <img src="../img/titlegwap.png" class="responsive-img" >
+     
+
+
+           </div>
+         </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+          
+              <br> <p class="x-large-text">
+
+              We are currently performing user playtests while scoping milestones and upcoming features. To generate data
+through playtesting, quantitative and qualitative methods
+are used.<br><br><h5>Quantitative Data</h5>
+<p class="x-large-text"><br>
+Through quantitative data collection, the category of image
+and explanations which the explainer chooses to describe
+the image are tracked along with the order in which the explanations are selected. As explanations are revealed to
+guessers, guesses are logged and associated information
+(e.g. how long it takes guessers to identify an image from
+explanations) is logged. Quantitative data is collected as
+players complete and replay games. Quantitative data can
+help answer the following questions about GWAP for XAI
+image visualization:</p><li class="x-large-text">What explanations do explainers choose from those
+provided?</p><li class="x-large-text">How do explainer-selected visualizations align to
+those that the AI selects as top-ranked explanations
+for given images?</li></p><li class="x-large-text">Will guessers be able to interpret top-ranked explanations better than lower-ranked explanations?</li><br></p><li class="x-large-text">How does accuracy of player interpretation of explanations evolve over multiple games (e.g. guessers guessing correct image after fewer reveals and explainers selecting more ’top-ranked’ visualizations)?</p></li><li class="x-large-text">What effect might gamification provide to identifying explanations and improving user satisfaction during gameplay (e.g. tracked through points earned)?</p></li>
+
+ -->
+
+             <!--  <h5>Research Questions</h5><br> -->
+             
+             <!--  <p class="x-large-text">1. Will players who are explainers identify feature visualizations that AI also select to best represent source images? Similarly, will guessers  be able to interpret top-ranked explanations better than lower ranked explanations?<br><br>2. Should players improve at guessing source images during rounds or over the course of multiple games? <br><br>3. Can gamification with points for guessing attributes of feature visualization images improve guessing and user satisfaction when playing?<br><br>4. How might GWAP techniques in our research be generalized to other XAI problems? -->
+        <!--       </div>
+
+            <div class="col-sm-6">
+              <br>
+              <h5>Qualitative Survey Data</h5>
+                 <br> <p class="x-large-text">
+             
+As part of playtests, users are surveyed about their experience. Following the first and second games, clarifying
+questions are asked to determine areas of uncertainty
+and gauge user perspective of their performance. Following playtesting, questions are asked to gather additional
+feedback (e.g. would there be something to motivate you to
+play more?; would you share your game results with others,
+what makes this appealing, why or why not?). Users are
+also surveyed with questions where they quantify an answer: Strongly Disagree, Disagree, Neutral, Agree, Strongly
+Agree. These survey questions try to capture how users
+might perceive and experience the game (e.g. I consider
+myself a gamer; I felt engaged when selecting visualizations; selecting visualizations was intuitive; replaying the
+game made me more successful in guessing).</p><br>
+
+   <h5>Next Steps</h5>
+                 <br> <p class="x-large-text">
+             
+Testing our game will provide metrics which can help us assess if GWAP can provide value for XAI. Through deploying our game we: <br>1.) Produce an initial dataset <br>2.) Analyze the dataset to understand the impact of specific image explanations on players’ ability to identify original images. <br><br>Collecting data will demonstrate basic validity of our approach of GWAP for XAI that we can engage players and produce usable data. The dataset can also support assessment of how often players agree on what the explanations mean and if selection corresponds with the ground truth of the labeled data from which the explanation was generated.</p><br>
+
+          </div>
+
+          </div> -->
+
+        
           <br>
                      <div class = "spacer"></div>
 
@@ -183,7 +390,7 @@ Through this research, I am expanding my background in research program manageme
               To begin answering our research questions, collecting both quantitative web log data while users are playing and qualitative data when users finish individual games and rounds of play is important.
               Currenlty performing user playtests while scoping milestones and upcoming features.   
                <br><br>
-               <b>More Details TBD</b>. Currenly in progress of user playtesting. For more details on this project, please read our recent submission to the ACM CHI Conference on Human Factors in Computing Systems: <a href="../chi20e-sub1129-i7.pdf" target="_blank" style="color: #65D5BA" >CHI 2020</a>.
+               <b>Details Coming Soon</b>. I am currenly in progress of leading user playtesting. For details about our project - motivations, relevant research, game details, and please read our recent submission to the ACM CHI Conference on Human Factors in Computing Systems which contains the meaty details: <a href="../chi20e-sub1129-i7.pdf" target="_blank" style="color: #65D5BA" >CHI 2020</a>.
                <br></p>
               
 
@@ -191,6 +398,18 @@ Through this research, I am expanding my background in research program manageme
           </div>
         </div>
    
+
+
+        
+<!--  <h5> "Models are ideas about the world - how it might be organized and how it might work." -Hugh Dubberly</h5r><br> -->
+
+              </div>
+            </div>
+
+            </div>
+
+      
+
 
         <div class="spacer"></div>
 
